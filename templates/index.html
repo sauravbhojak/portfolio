@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Saurav Bhojak | Python Backend Developer</title>
+  <meta name="description" content="Saurav Bhojak builds scalable Python backends, FastAPI services, REST APIs, automation systems and data pipelines.">
+  <meta property="og:title" content="Saurav Bhojak | Python Backend Developer">
+  <meta property="og:description" content="Backend portfolio for FastAPI, Django, automation, ETL and production APIs.">
+  <meta property="og:type" content="website"><meta name="theme-color" content="#08090c">
+  <link rel="icon" href="/static/images/favicon.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+  <div class="noise"></div>
+  {% include "components/nav.html" %}
+
+  <main id="home">
+    <section class="hero wrap reveal">
+      <div class="hero-main">
+        <p class="kicker">Python Backend Developer · Ahmedabad, India</p>
+        <h1>Building backend systems that stay fast, clean, and reliable.</h1>
+        <div class="role-line">Specialized in <span id="role">FastAPI Development</span></div>
+        <p class="lead">I’m Saurav Bhojak, a backend engineer with 2.5+ years of experience building REST APIs, automation tools, AI-integrated applications, ETL pipelines, and real-time monitoring systems.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">View Work</a>
+          <a class="btn" href="/static/Saurav_Bhojak_Resume.pdf" download>Download Resume</a>
+          <a class="btn ghost" href="https://github.com/sauravbhojak" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn ghost" href="https://linkedin.com/in/saurav-b-757936223" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+      <aside class="hero-card">
+        <div class="card-head"><span></span><b>backend.pipeline</b></div>
+        <div class="pipeline">
+          <p><i></i> Request validation</p>
+          <p><i></i> Business logic</p>
+          <p><i></i> PostgreSQL / Redis</p>
+          <p><i></i> Async workers</p>
+          <p><i></i> Production response</p>
+        </div>
+        <div class="metrics">
+          <div><b>2.5+</b><span>Years</span></div>
+          <div><b>5</b><span>Major systems</span></div>
+          <div><b>API</b><span>First</span></div>
+        </div>
+      </aside>
+    </section>
+
+    <section id="about" class="section wrap reveal">
+      <div class="section-title"><span>01</span><h2>About</h2></div>
+      <div class="split">
+        <p class="big">Experienced Python Developer building scalable REST APIs, backend systems, automation tools, AI-integrated applications, and real-time monitoring systems using FastAPI, Django, Flask, PostgreSQL, Redis, Docker, and AWS.</p>
+        <div class="facts">
+          {% for item in ["FastAPI & Django","REST API Architecture","PostgreSQL & Redis","AI Integrations","Docker & AWS","Automation Systems"] %}
+          <div>{{ item }}</div>
+          {% endfor %}
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section wrap reveal">
+      <div class="section-title"><span>02</span><h2>Core Stack</h2></div>
+      {% set skills = {
+        "Languages":["Python","JavaScript","HTML","CSS"],
+        "Frameworks":["FastAPI","Django","DRF","Flask"],
+        "Databases":["PostgreSQL","MySQL","MongoDB","Redis"],
+        "DevOps":["Docker","AWS","Jenkins","GitLab","Postman"],
+        "Specialties":["REST APIs","Automation","Web Scraping","asyncio"]
+      } %}
+      <div class="stack-grid">
+        {% for title, items in skills.items() %}
+        <article class="stack"><h3>{{ title }}</h3><div>{% for item in items %}<span>{{ item }}</span>{% endfor %}</div></article>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section id="experience" class="section wrap reveal">
+      <div class="section-title"><span>03</span><h2>Experience</h2></div>
+      <div class="experience">
+        <article>
+          <time>Jan 2023 - Present</time>
+          <h3>Python Developer · Upsquare Technologies</h3>
+          <p>Developed production REST APIs, HRMS modules, VPN monitoring systems, AI integrations, and real-time tracking workflows.</p>
+        </article>
+        <article>
+          <time>Feb 2022 - Dec 2022</time>
+          <h3>Web Scraping Developer · Freelance</h3>
+          <p>Built automation scripts, scraping workflows, and structured data pipelines for business data extraction.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section wrap reveal">
+      <div class="section-title"><span>04</span><h2>Selected Systems</h2></div>
+      {% set projects = [
+        ("VPN Monitoring System","Real-time VPN infrastructure monitoring with analytics dashboard, connection tracking, and user activity logs.","Python, Flask, Django, Redis, MongoDB, asyncio"),
+        ("HR Management System","Attendance, payroll, leave management, employee records, and role-based workflows for HR operations.","Django, DRF, PostgreSQL"),
+        ("Resource Allocation Tool","Planning platform for employee allocation, project tracking, and team utilization visibility.","Python, Django, PostgreSQL"),
+        ("AI Tattoo Generation Backend","FastAPI backend for concurrent AI generation, SSO authentication, and fast API responses.","FastAPI, AI APIs, Gunicorn"),
+        ("Healthcare ETL Pipeline","ETL workflows with PHI/PII masking, analytics-ready schemas, and million-record processing.","Python, PostgreSQL, MSSQL")
+      ] %}
+      <div class="projects">
+        {% for name, desc, stack in projects %}
+        <article class="project">
+          <div class="preview-box"><span></span><span></span><span></span></div>
+          <div>
+            <h3>{{ name }}</h3>
+            <p>{{ desc }}</p>
+            <small>{{ stack }}</small>
+            <a href="https://github.com/sauravbhojak" target="_blank" rel="noreferrer">GitHub</a>
+          </div>
+        </article>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section id="contact" class="section wrap contact reveal">
+      <div>
+        <div class="section-title"><span>05</span><h2>Contact</h2></div>
+        <p class="big">Need a backend developer for APIs, automation, integrations, or data pipelines? Let’s talk.</p>
+        <div class="contact-list">
+          <a href="mailto:sauravbhojak6156@gmail.com">sauravbhojak6156@gmail.com</a>
+          <a href="tel:+919328199796">9328199796</a>
+          <a href="https://github.com/sauravbhojak" target="_blank" rel="noreferrer">github.com/sauravbhojak</a>
+          <a href="https://linkedin.com/in/saurav-b-757936223" target="_blank" rel="noreferrer">linkedin.com/in/saurav-b-757936223</a>
+        </div>
+      </div>
+      <form id="contact-form" class="contact-form">
+        <label>Name<input name="name" required minlength="2" autocomplete="name"></label>
+        <label>Email<input name="email" type="email" required autocomplete="email"></label>
+        <label>Message<textarea name="message" required minlength="10" rows="5"></textarea></label>
+        <button class="btn primary" type="submit">Send Message</button>
+        <p id="form-note"></p>
+      </form>
+    </section>
+  </main>
+
+  {% include "components/footer.html" %}
+  <div id="toast"></div>
+  <script src="/static/js/main.js"></script>
+</body>
+</html>

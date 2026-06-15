@@ -1,0 +1,20 @@
+# NOTE: This is a frontend React/Node.js project, not a Python project.
+# In React, dependencies are managed by the `package.json` file.
+# To install all of these dependencies automatically, simply run:
+# npm install
+
+# Core Framework
+react>=18.2.0
+react-dom>=18.2.0
+
+# UI & Animations
+framer-motion>=11.0.0
+lucide-react>=0.300.0
+react-icons>=5.0.0
+react-type-animation>=3.2.0
+
+# AI Integration
+@google/genai>=0.1.2
+
+# Build Tools (Dev Dependencies)
+vite>=5.0.0

@@ -123,10 +123,10 @@ TECHNICAL SKILLS:
 - Tools: Git, Postman, VS Code, pytest, Web Scraping (Selenium, Scrapy)
 
 PROJECTS:
-1. VPN Management Platform – FastAPI, Django, MySQL, Redis, Celery, Docker
-2. HR Management System – Django, DRF, PostgreSQL, Celery, Docker
-3. AI Tattoo Generation Backend – FastAPI, SSO, AWS Lambda, Docker
-4. Healthcare Data & OLAP Pipeline – Python, AWS RDS, S3, Lambda, Boto3
+1. AI Tattoo Generation Backend – FastAPI, SSO, AWS Lambda, Docker
+2. AI Numerology – FastAPI, Machine Learning, Python
+3. Data Forge – Python, ETL, Data Engineering
+4. Repo Pulse – JavaScript, GitHub API, Analytics
 
 CONTACT:
 - Email: sauravbhojak6156@gmail.com

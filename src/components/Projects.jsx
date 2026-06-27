@@ -27,8 +27,35 @@ const projects = [
     hash: 'commit 1a4d8f5',
     date: 'Jan 2025',
     tech: ['Python', 'FastAPI', 'SSO', 'AWS Lambda', 'Docker'],
-    description: 'High-performance backend integrating AI APIs for custom tattoo designs. Deployed image processing via AWS Lambda for scalable serverless execution.',
-    links: { github: 'https://github.com/SauravBhojak/tattoo-backend', live: '#' },
+    description: 'High-performance backend integrating AI APIs for custom tattoo designs. Developed as a company project with scalable serverless image processing flows.',
+    links: { github: '#', live: '#' },
+    isPrivate: true
+  },
+  {
+    title: 'AI Numerology',
+    hash: 'commit a7c9f12',
+    date: 'May 2024',
+    tech: ['Python', 'FastAPI', 'Machine Learning', 'APIs'],
+    description: 'Personal project delivering numerology insights through a fast API service with modern Python tooling and algorithmic prediction features.',
+    links: { github: 'https://github.com/sauravbhojak/ai-numerology', live: '#' },
+    isPrivate: false
+  },
+  {
+    title: 'Data Forge',
+    hash: 'commit b3e4d7a',
+    date: 'Aug 2024',
+    tech: ['Python', 'Pandas', 'ETL', 'Data Engineering'],
+    description: 'A data processing toolkit for cleaning, transforming, and analyzing datasets efficiently, built as a personal open-source repository.',
+    links: { github: 'https://github.com/sauravbhojak/data-forge', live: '#' },
+    isPrivate: false
+  },
+  {
+    title: 'Repo Pulse',
+    hash: 'commit c2f6e8b',
+    date: 'Feb 2024',
+    tech: ['JavaScript', 'Node.js', 'GitHub API', 'Analytics'],
+    description: 'Open-source repo analytics tool providing insights on repository activity, contributions, and health metrics.',
+    links: { github: 'https://github.com/sauravbhojak/repo-pulse', live: '#' },
     isPrivate: false
   },
   {
